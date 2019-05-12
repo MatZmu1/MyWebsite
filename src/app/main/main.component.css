@@ -1,0 +1,18 @@
+.main {
+  background-color: rgb(250, 250, 250);
+  height: 80vh;
+  width: 100vw;
+  background-image: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/notebook-1280538_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #e5e5e5;
+}
+.me {
+  padding: 150px;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+}
+span {
+  color: rgb(101, 235, 206);
+}

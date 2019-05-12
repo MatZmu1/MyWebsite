@@ -1,0 +1,33 @@
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  background-color: rgb(165, 133, 92);
+  justify-content: center;
+  background: linear-gradient(-110deg, #f17e7e 75%, #87d3f7 60%);
+}
+.portfolio-card {
+  max-width: auto;
+  justify-content: center;
+  height: 70vh;
+  width: 25vw;
+  margin: 15px;
+  border-style: solid;
+  border-color: #e5e5e5;
+  background: linear-gradient(110deg, #f8d365 60%, #eee596 60%);
+}
+
+.portfolio-header-image {
+  background-image: url("IMG_1848.jpg");
+  background-size: cover;
+}
+
+.button {
+  bottom: 20px;
+  background-color: rgb(104, 100, 109);
+  color: #e5e5e5;
+}
+.button:hover {
+  background-color: rgb(54, 54, 54);
+  color: white;
+}

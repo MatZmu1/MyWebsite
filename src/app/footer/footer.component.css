@@ -1,0 +1,12 @@
+.footer {
+  height: 10vh;
+  background-color: rgb(104, 100, 109);
+  border-top-color: #e5e5e5;
+  border-top-style: solid;
+}
+p {
+  text-align: center;
+  padding: 25px;
+  color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+}

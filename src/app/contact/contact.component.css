@@ -1,0 +1,17 @@
+.contact {
+  height: 80vh;
+  width: 100vw;
+  background: linear-gradient(
+      to top left,
+      white,
+      rgba(136, 135, 135, 0),
+      rgb(241, 161, 161)
+    ),
+    linear-gradient(
+        to top right,
+        rgb(245, 224, 104),
+        rgba(255, 153, 150, 0),
+        rgb(245, 146, 223)
+      )
+      rgb(184, 245, 148);
+}
