@@ -1,68 +1,87 @@
-<div class="contact">
-  <h1>Contact with me</h1>
-  <div class="example-container">
-    <mat-form-field>
-      <input type="text" matInput placeholder="Name" />
-    </mat-form-field>
-    <mat-form-field>
-      <input type="number" placeholder="Telephone" />
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput type="string" placeholder="Mail adress" />
-    </mat-form-field>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous"
+/>
+<link
+  href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
 
-    <mat-form-field>
-      <textarea matInput placeholder="Textarea"></textarea>
-    </mat-form-field>
-    <mat-form-field>
-      <button type="submit" class="btn btn-success" (click)="onSubmit()">
-        Send
-      </button>
-    </mat-form-field>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+      <h2 class="form-title">Contact with me</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <form
+        id="contact-form"
+        name="myForm"
+        class="form"
+        action="#"
+        onsubmit="return validateForm()"
+        method="POST"
+        role="form"
+      >
+        <div class="form-group">
+          <label class="form-label" id="nameLabel" for="name"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            tabindex="1"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" id="emailLabel" for="email"></label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            tabindex="2"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" id="subjectLabel" for="sublect"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            tabindex="3"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" id="messageLabel" for="message"></label>
+          <textarea
+            rows="6"
+            cols="60"
+            name="message"
+            class="form-control"
+            id="message"
+            placeholder="Your message"
+            tabindex="4"
+          ></textarea>
+        </div>
+
+        <div class="text-center margin-top-25">
+          <button type="submit" class="btn btn-mod btn-border btn-large">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
-
-<!-- <form>
-  <div class="form-group">
-    <label for="name"></label>
-    <input
-      type="text"
-      class="form-control"
-      id="name"
-      required
-      name="name"
-      [(ngModel)]="name"
-      placeholder="Name"
-    />
-  </div>
-
-  <div class="form-group">
-    <label for="name"></label>
-    <input
-      type="text"
-      class="form-control"
-      id="name"
-      required
-      name="name"
-      [(ngModel)]="mail"
-      placeholder="Mail adress"
-    />
-  </div>
-
-  <div class="form-group">
-    <label for="name"></label>
-    <input
-      type="text"
-      class="form-control"
-      id="name"
-      required
-      name="name"
-      [(ngModel)]="message"
-      placeholder="Type your message"
-    />
-  </div>
-
-  <button type="submit" class="btn btn-success" (click)="onSubmit()">
-    Send
-  </button>
-</form> -->
