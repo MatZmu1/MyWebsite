@@ -1,3 +1,68 @@
 <div class="contact">
   <h1>Contact with me</h1>
+  <div class="example-container">
+    <mat-form-field>
+      <input type="text" matInput placeholder="Name" />
+    </mat-form-field>
+    <mat-form-field>
+      <input type="number" placeholder="Telephone" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="string" placeholder="Mail adress" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea matInput placeholder="Textarea"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <button type="submit" class="btn btn-success" (click)="onSubmit()">
+        Send
+      </button>
+    </mat-form-field>
+  </div>
 </div>
+
+<!-- <form>
+  <div class="form-group">
+    <label for="name"></label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      required
+      name="name"
+      [(ngModel)]="name"
+      placeholder="Name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="name"></label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      required
+      name="name"
+      [(ngModel)]="mail"
+      placeholder="Mail adress"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="name"></label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      required
+      name="name"
+      [(ngModel)]="message"
+      placeholder="Type your message"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-success" (click)="onSubmit()">
+    Send
+  </button>
+</form> -->

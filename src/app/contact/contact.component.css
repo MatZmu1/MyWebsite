@@ -15,3 +15,12 @@
       )
       rgb(184, 245, 148);
 }
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}

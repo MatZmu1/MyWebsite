@@ -18,10 +18,13 @@ import {
   MatButtonModule,
   MatSidenavModule,
   MatIconModule,
-  MatListModule,
+  MatListModule
 } from "@angular/material";
-
+import { FormsModule } from "@angular/forms";
+// import { AngularFireModule } from "@angular/fire";
 import { MatCardModule } from "@angular/material/card";
+import { MatFormFieldModule } from "@angular/material/form-field";
+
 const routes: Routes = [
   {
     path: "",
@@ -72,7 +75,9 @@ const routes: Routes = [
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

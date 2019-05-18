@@ -4,7 +4,11 @@
   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
   crossorigin="anonymous"
 />
-<header class="navigation">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<!-- <header class="navigation">
   <nav>
     <ul>
       <li
@@ -40,4 +44,49 @@
       </li>
     </ul>
   </nav>
-</header>
+</header> -->
+<div class="topnav" id="myTopnav">
+  <ul>
+    <li
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Main
+    </li>
+    <li
+      routerLink="/about-me"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      About me
+    </li>
+    <li
+      routerLink="/portfolio"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Portfolio
+    </li>
+    <li
+      routerLink="/contact"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Contact
+    </li>
+    <li href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
