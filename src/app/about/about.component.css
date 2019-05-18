@@ -1,39 +1,22 @@
 .about {
   height: 80vh;
-  display: flex;
-  justify-content: center;
+}
+.bg-1 {
+  background-color: #1abc9c; /* Green */
+  color: #ffffff;
+  height: 35vh;
   font-family: "Indie Flower", cursive;
-  background: linear-gradient(125deg, #e9b881, #858585),
-    linear-gradient(185deg, transparent, rgb(137, 200, 252)),
-    linear-gradient(108deg, rgb(243, 151, 151), transparent);
+  font-size: 25px;
 }
-.about-card {
-  top: 10px;
-  height: 70vh;
-  width: 60vw;
-  /* background-color: rgb(253, 214, 107); */
-  border-radius: 15px;
-  border: inset 5px;
-  background: linear-gradient(110deg, #facf9e 40%, rgba(0, 0, 0, 0) 30%),
-    radial-gradient(farthest-corner at 0% 0%, #ffe2a3 70%, #ecd68b 70%);
+.img-circle {
+  height: 120px;
+  width: 80px;
 }
-.header-card {
-  display: flex;
-  align-content: flex-end;
-  margin: 10px;
-}
-
-.about-header-image {
-  background-image: url("IMG_1848.jpg");
-  background-size: cover;
-}
-p::first-line {
-  font-size: 45px;
-}
-p {
+.bg-2 {
+  background-color: #474e5d; /* Dark Blue */
+  color: #ffffff;
+  font-family: "Indie Flower", cursive;
   font-size: 35px;
-}
-img {
-  border-radius: 10px;
-  width: 150px;
+  height: 45vh;
+  color: rgb(101, 235, 206);
 }
