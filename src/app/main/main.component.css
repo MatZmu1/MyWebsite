@@ -16,6 +16,18 @@
 span {
   color: rgb(101, 235, 206);
 }
+.typewriter {
+  color: rgb(101, 235, 206);
+  display: inline-block;
+  width: 40vw;
+  height: 20vh;
+  background-color: #000000;
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+  background: #000;
+  border: 3px groove #ccc;
+}
 
 .icon-bar {
   position: fixed;
