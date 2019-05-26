@@ -2,7 +2,7 @@
   height: 80vh;
 }
 .bg-1 {
-  background-color: #1abc9c; /* Green */
+  background-color: #2fc0a3;
   color: #ffffff;
   height: 35vh;
   font-family: "Indie Flower", cursive;
@@ -13,10 +13,12 @@
   width: 80px;
 }
 .bg-2 {
-  background-color: #474e5d; /* Dark Blue */
+  background-color: #474e5d;
   color: #ffffff;
   font-family: "Indie Flower", cursive;
   font-size: 35px;
   height: 45vh;
   color: rgb(101, 235, 206);
+  border-top-color: #e5e5e5;
+  border-top-style: solid;
 }

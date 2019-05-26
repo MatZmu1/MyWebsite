@@ -31,12 +31,17 @@ span {
   padding: 16px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: 5px;
 }
 
 .icon-bar a:hover {
   background-color: #000;
-  margin-right: 35px;
+  padding: 35px;
+  font-size: 35px;
 }
 
 .facebook {
