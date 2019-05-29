@@ -28,9 +28,15 @@
         role="form"
       >
         <div class="form-group">
-          <label class="form-label" id="nameLabel" for="name"></label>
+          <label class="form-label" id="nameLabel" for="name">Name:</label>
           <input
-            type="text"
+            name="first"
+            [(ngModel)]="name"
+            id="name"
+            required
+            id="name"
+            required
+            type="name"
             class="form-control"
             id="name"
             name="name"
@@ -40,8 +46,12 @@
         </div>
 
         <div class="form-group">
-          <label class="form-label" id="emailLabel" for="email"></label>
+          <label class="form-label" id="nameLabel" for="email">Email:</label>
           <input
+            name="first"
+            [(ngModel)]="email"
+            id="email"
+            required
             type="email"
             class="form-control"
             id="email"
@@ -52,8 +62,15 @@
         </div>
 
         <div class="form-group">
-          <label class="form-label" id="subjectLabel" for="sublect"></label>
+          <label class="form-label" id="nameLabel" for="subject"
+            >Subject:</label
+          >
           <input
+            name="first"
+            [(ngModel)]="subject"
+            id="subject"
+            required
+            name="subject"
             type="text"
             class="form-control"
             id="subject"
@@ -64,9 +81,14 @@
         </div>
 
         <div class="form-group">
-          <label class="form-label" id="messageLabel" for="message"></label>
+          <label class="form-label" id="nameLabel" for="message"
+            >Message:</label
+          >
           <textarea
-            rows="6"
+            name="first"
+            [(ngModel)]="message"
+            id="message"
+            required
             cols="60"
             name="message"
             class="form-control"
@@ -75,9 +97,12 @@
             tabindex="4"
           ></textarea>
         </div>
-
         <div class="text-center margin-top-25">
-          <button type="submit" class="btn btn-mod btn-border btn-large">
+          <button
+            type="button"
+            class="btn btn-mod btn-border btn-large"
+            (click)="onSubmit()"
+          >
             Send Message
           </button>
         </div>

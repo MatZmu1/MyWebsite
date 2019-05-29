@@ -21,9 +21,15 @@ import {
   MatListModule
 } from "@angular/material";
 import { FormsModule } from "@angular/forms";
-// import { AngularFireModule } from "@angular/fire";
+
+import { AngularFireAuthModule } from "angularfire2/auth";
+import { AngularFireModule } from "angularfire2";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFireStorageModule } from "@angular/fire/storage";
+
 import { MatCardModule } from "@angular/material/card";
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { environment } from "../environments/environment.prod";
 
 const routes: Routes = [
   {
@@ -64,6 +70,11 @@ const routes: Routes = [
     FooterComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
