@@ -19,26 +19,22 @@
   outline: none;
 }
 
-
 .topnav li:hover {
   background-color: rgb(78, 77, 77);
   color: #fff;
   cursor: pointer;
 }
 
-
 .active {
   color: white;
   border-bottom: 2px solid #fff;
 }
 
-
 .topnav .icon {
   display: none;
 }
 
-
-@media screen and (max-width: 600px) {
+ /* @media screen and (max-width: 600px) {
   .topnav li:not(:first-child) {
     display: none;
   }
@@ -63,4 +59,4 @@
     display: block;
     text-align: left;
   }
-}
+}   */

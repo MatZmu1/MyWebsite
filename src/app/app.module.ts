@@ -30,7 +30,6 @@ import { AngularFireStorageModule } from "@angular/fire/storage";
 import { MatCardModule } from "@angular/material/card";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { environment } from "../environments/environment.prod";
-
 const routes: Routes = [
   {
     path: "",
@@ -88,7 +87,8 @@ const routes: Routes = [
     MatListModule,
     MatCardModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
