@@ -22,7 +22,8 @@ export class ContactComponent implements OnInit {
       subject: this.subject,
       message: this.message
     };
-    console.log("123");
+    // console.log("123");
+    window.alert("Thank's for the message!!!");
     this.db.collection("contactForm").add({ obj });
   }
 }
