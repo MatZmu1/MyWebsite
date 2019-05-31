@@ -77,3 +77,14 @@ span {
   background: #f86a60;
   color: white;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  div.me {
+    font-size: 20px;
+    padding: 100px;
+  }
+  .typewriter {
+    font-size: 12px;
+    width: 50vw;
+    height: 13vh;
+  }
+}

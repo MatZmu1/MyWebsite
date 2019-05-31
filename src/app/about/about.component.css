@@ -22,3 +22,9 @@
   border-top-color: #e5e5e5;
   border-top-style: solid;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+   p {
+    font-size: 20px;
+  }
+}
