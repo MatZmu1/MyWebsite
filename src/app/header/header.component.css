@@ -34,7 +34,7 @@
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 414px) and (max-width: 736px) {
   .topnav li {
     font-size: 15px;
     height: 20%;
